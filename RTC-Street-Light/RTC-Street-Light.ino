@@ -1,5 +1,5 @@
 /*
- * mornah hermann anglania
+ * Mornah Hermann Anglania
  * morlantech.com/anglania
  */
 
@@ -86,19 +86,19 @@ void light_action(){
       analogWrite(block_lamps[i], 127.5);
       }
       else {
-        if (digitalRead(LDR1) == HIGH || digitalRead(PIR0) == HIGH){
+        if (digitalRead(LDR1) == HIGH || digitalRead(PIR1) == HIGH){
           analogWrite(block1_lamps, 255);
           Serial.println("block 1 on");
           }
-        else if (digitalRead(LDR2) == HIGH || digitalRead(PIR1) == HIGH){
+        else if (digitalRead(LDR2) == HIGH || digitalRead(PIR2) == HIGH){
           analogWrite(block2_lamps, 255);
           Serial.println("block 2 on");
           }
-        else if (digitalRead(LDR3) == HIGH || digitalRead(PIR2) == HIGH){
+        else if (digitalRead(LDR3) == HIGH || digitalRead(PIR3) == HIGH){
           analogWrite(block3_lamps, 255);
           Serial.println("block 3 on");
           }
-        else if (digitalRead(LDR4) == HIGH || digitalRead(PIR3) == HIGH){
+        else if (digitalRead(LDR4) == HIGH || digitalRead(PIR4) == HIGH){
           analogWrite(block4_lamps, 255);
           Serial.println("block 4 on");
           }

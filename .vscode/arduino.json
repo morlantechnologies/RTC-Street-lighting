@@ -1,0 +1,4 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "RTC-Street-Light\\RTC-Street-Light.ino"
+}
